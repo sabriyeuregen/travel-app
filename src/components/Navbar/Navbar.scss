@@ -1,39 +1,104 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  background-color: #24252a;
-}
 .navbar {
-  header {
+
+  .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: fixed;
     padding: 20px 10px;
+    background: transparent;
+    color: white;
+    width: 100%;
+    height: 50px;
+    z-index: 1;
 
     .logo {
       cursor: pointer;
       font-size: 20px;
       margin-left: 10px;
+      color: #264653;
     }
 
-    .nav__links {
+    ul {
       list-style: none;
 
       li {
         display: inline-block;
         padding: 8px 20px;
         transition: all 0.3s ease 0s;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 500;
+        font-weight: 800;
         font-size: 16px;
-        color: #ecf0f1;
+        color: #264653;
         text-decoration: none;
-
-        li:hover {
-          color: #0088a9;
-        }
       }
+    }
+    .basketbtn {
+      padding: 14px;
+      border: none;
+      outline: none;
+      border-radius: 2rem;
+      cursor: pointer;
+      background-color: #264653;
+
+      &:hover {
+        background-color: white;
+        border-style: solid;
+        border-color: #264653;
+      }
+
+
+      .basketicon {
+        font-size: 16px;
+        color: #ffa822;
+
+      }
+    }
+    .togglenavbar {
+      display: none;
+    }
+    .closenavbar {
+      display: none;
     }
   }
 }
+@media screen and (max-width: 768px) {
+     .navbar__items {
+      position: absolute;
+      background-color: aliceblue;
+      height: max-content;
+      top: 0;
+      left: 0;
+      transition: 0.5s ease;
+      z-index: 1;
+      box-shadow: 0 2px 4px rgba(209, 209, 209, 0.904);
+      padding: 1rem;
+      width: 100%;
+
+        .navbar__lists {
+          display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+           width: 100%;
+           margin: auto;
+
+           .navbar-item {
+            padding: 1rem 0;
+           }
+
+           .basketbtn {
+            margin-top: 1rem;
+           }
+        }
+        .closenavbar {
+         position: a;
+         right: 0;
+         top: 0;
+        }
+        .togglenavbar{
+
+        }
+    }
+
+  }
+

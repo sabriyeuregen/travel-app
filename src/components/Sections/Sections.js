@@ -3,7 +3,6 @@ const Sections = (props) => {
   return (
     <div>
       <div ref={props.home} className="home">
-        <h3>home</h3>
       </div>
       <div ref={props.countries} className="countries">
       <h3>Countries</h3>
