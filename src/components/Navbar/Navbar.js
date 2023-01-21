@@ -1,52 +1,37 @@
 import "./Navbar.scss";
-import Sections from "../Sections/Sections";
-import { useRef,useState } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEarthAmericas, faBasketShopping ,faXmarkCircle, faBars} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faEarthAmericas,
+  faBasketShopping,
+  faXmarkCircle,
+  faBars,
+} from "@fortawesome/free-solid-svg-icons";
 const Navbar = () => {
-
-  const home = useRef(null);
-  const countries = useRef(null);
-  const about = useRef(null);
-  const contact = useRef(null);
-
- const[active, setActive] = useState();
-
-  const scrollToSection = (elementRef) => {
-    window.scrollTo({
-      top: elementRef.current.offsetTop,
-      behavior: "smooth",
-    });
-  };
+ 
+  const [showNav, setShowNav] = useState(false)
 
   return (
-    <div className="navbar">
-      <header className="header">
-        <div className="logo"><FontAwesomeIcon icon={faEarthAmericas}></FontAwesomeIcon></div>
-        <h1>Traveler</h1>
-        <div className="navbar__items">
-          <ul className="navbar__lists">
-            <li className="navbar-item" onClick={()=> scrollToSection(home)}>Home
-            </li>
-            <li className="navbar-item" onClick={()=> scrollToSection(countries)}>Countries
-            </li>
-            <li className="navbar-item" onClick={()=> scrollToSection(about)}> About
-            </li>
-            <li className="navbar-item" onClick={()=> scrollToSection(contact)}>Contact
-            </li>
-            <button className="basketbtn"><FontAwesomeIcon className="basketicon" icon={faBasketShopping}/></button>
-          </ul>
-      <div className="closenavbar">
-         <FontAwesomeIcon icon={faXmarkCircle}></FontAwesomeIcon>
-      </div> 
-      <div className="togglenavbar">
-        <FontAwesomeIcon icon={faBars}></FontAwesomeIcon>
+    <div className="nav-bar">
+      <div className="logo-container">
+      <FontAwesomeIcon size="20px" icon={faEarthAmericas}></FontAwesomeIcon>
+      <span>Traveller</span>
       </div>
+      <nav className={showNav ? 'mobile-show' : ''}>
+        <div className="navbar-item">
+      <ul>
+       <li>Anasayfa</li>
+       <li>Ülkeler</li>
+       <li>Hakkımızda</li>
+       <li>İletişim</li>
+       <button className="basketbtn"><FontAwesomeIcon className="basketicon" icon={faBasketShopping}/></button>
+      </ul>
       </div>
-     </header>
-     {/*<Sections home={home} about={about} contact={contact} countries={countries}/>*/}
-    </div>
-  )
-}
+        <FontAwesomeIcon className='close-icon' icon={faXmarkCircle} onClick={() => setShowNav(false)} ></FontAwesomeIcon>
+      </nav>
+        <FontAwesomeIcon className="hamburger-icon" icon={faBars} onClick={() => setShowNav(true)}></FontAwesomeIcon>
+     </div>
+  );
+};
 
 export default Navbar;
