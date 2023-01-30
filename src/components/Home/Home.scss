@@ -9,4 +9,31 @@
     justify-content: center;
     margin: auto;
     position: relative;
+
+     .homecontainer {
+       &__text {
+         text-align: center;
+
+             &-title {
+              color: white;
+              font-size: 2rem;
+              font-weight: 700;
+              line-height: 2.5rem;
+             }
+
+             &-subtitle {
+              color: white;
+              opacity: .9;
+              font-size: 13px;
+              font-weight: 300;
+              padding: 1rem 0; 
+              max-width: 70%;
+              text-align: center;
+              margin: auto;
+            }
+            &-btn {
+                padding: .6rem 1.5rem;
+            }
+       }  
+    }
 }

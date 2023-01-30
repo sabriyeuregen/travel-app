@@ -21,7 +21,7 @@ const Navbar = () => {
         <div className="navbar-item">
       <ul>
        <li>Anasayfa</li>
-       <li>Ülkeler</li>
+       <li>Turlar</li>
        <li>Hakkımızda</li>
        <li>İletişim</li>
        <button className="basketbtn"><FontAwesomeIcon className="basketicon" icon={faBasketShopping}/></button>
