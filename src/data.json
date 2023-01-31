@@ -1,44 +1,52 @@
-[
-    {
-        "id": 1,
-        "img": "https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "name": "Dubai",
-        "price": "500USD"  
-    },
-    {
-        "id": 2,
-        "img": "https://images.unsplash.com/photo-1629468855534-450d7c4c5f72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
-        "name": "Mısır",
-        "price": "300USD"
-    },
-    {
-        "id": 3,
-        "img": "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "name": "Londra",
-        "price": "250USD"
-    },
-    {
-        "id": 4,
-        "img": "https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
-        "name": "Paris",
-        "price": "175USD"
-    },
-    {
-        "id": 5,
-        "img": "https://images.unsplash.com/photo-1570698473651-b2de99bae12f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
-        "name": "İspanya",
-        "price": "699USD"
-    },
-    {
-        "id": 6,
-        "img": "https://images.unsplash.com/photo-1527838832700-5059252407fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=398&q=80",
-        "name": "Türkiye",
-        "price": "300USD"
-    },
-    {
-        "id": 7,
-        "img": "https://images.unsplash.com/photo-1576723658639-513237fdd520?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=430&q=80",
-        "name": "Amerika",
-        "price": "1000USD"
-    }
-]
+{
+    "abroad": [
+        {
+            "id": 1,
+            "img": "https://images.unsplash.com/photo-1546412414-e1885259563a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+            "name": "Dubai",
+            "price": "500USD"  
+        },
+        {
+            "id": 7,
+            "img": "https://images.unsplash.com/photo-1576723658639-513237fdd520?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=430&q=80",
+            "name": "Amerika",
+            "price": "1000USD"
+        }
+
+    ],
+    "ship": [
+        {
+            "id": 5,
+            "img": "https://images.unsplash.com/photo-1570698473651-b2de99bae12f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=436&q=80",
+            "name": "İspanya",
+            "price": "699USD"
+        },
+        {
+            "id": 6,
+            "img": "https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=383&q=80",
+            "name": "İtalya",
+            "price": "699USD"
+        }
+    ],
+    "culture":[
+        {
+            "id": 2,
+            "img": "https://images.unsplash.com/photo-1629468855534-450d7c4c5f72?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=327&q=80",
+            "name": "Mısır",
+            "price": "300USD"
+        },
+        {
+            "id": 3,
+            "img": "https://images.unsplash.com/photo-1526129318478-62ed807ebdf9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+            "name": "Londra",
+            "price": "250USD"
+        },
+        {
+            "id": 4,
+            "img": "https://images.unsplash.com/photo-1549144511-f099e773c147?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80",
+            "name": "Paris",
+            "price": "175USD"
+        }
+    ]
+   
+}
