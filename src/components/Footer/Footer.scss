@@ -1,0 +1,30 @@
+.footer {
+    background-color: #264653;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    &__security {
+
+          .icon {
+            font-size: 24px;
+            color: green;
+          }
+    }
+    &__phone {
+
+        .icon {
+            font-size: 24px;
+            color: white;
+        }
+    }
+    &__money {
+
+        .icon {
+            font-size: 24px;
+            color: white;
+        }
+    }
+}
