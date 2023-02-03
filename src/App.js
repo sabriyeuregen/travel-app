@@ -1,16 +1,21 @@
 import './App.css';
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./components/Home/Home";
 import Footer from "./components/Footer/Footer";
-import Popular from './components/Popular/Popular';
-import TourNavbar from './components/TourNavbar/TourNavbar';
+import Home from "./components/Home/Home";
+import TourNavbar from "./components/TourNavbar/TourNavbar";
+import FilterTour from "./components/FilterTour/FilterTour";
+import AboutUs from "./components/AboutUs/AboutUs";
+import Contact from "./components/Contact/Contact";
+
 const App = () => {
   return (
     <div className="App">
       <Navbar/>
-      <Home/>
+      <Home />
        <TourNavbar/>
-      <Popular/>
+       <FilterTour/>
+       <AboutUs />
+       <Contact />
       <Footer/>
     </div>
   );

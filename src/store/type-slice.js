@@ -1,30 +1,14 @@
 import { createSlice } from "@reduxjs/toolkit";
-import data from "../data.json";
-import TourCard from "../components/TourCard/TourCard";
 
 const typeSlice = createSlice({
   name: "type",
   initialState: {
-    isTourType: null,
+    type :""
   },
   reducers: {
     filterData(state, action) {
-      state.isTourType = action.payload.type;
+      state.type = action.payload;
 
-      data.isTourType.map((tour) => (
-        <TourCard
-          id={tour.id}
-          image={
-            <img
-              style={{ objectFit: "contain" }}
-              alt="tourimg"
-              src={tour.img}
-            />
-          }
-          name={tour.name}
-          price={tour.price}
-        />
-      ));
     },
   },
 });

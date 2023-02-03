@@ -3,45 +3,38 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSuitcase, faPlane, faShip } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
-import { categoryActions } from "../../store/category-slice";
 import { typeActions } from "../../store/type-slice";
 const TourNavbar = () => {
   const dispatch = useDispatch();
 
-  const [type, setType] = useState("");
-
   const shipBtnClickHandler = () => {
-    dispatch(categoryActions.selected());
     dispatch(
       typeActions.filterData({
-        type,
+        type:"ship"
       })
     );
-    setType("ship");
   };
-
+ 
   const abroadBtnClickHandler = () => {
-    dispatch(categoryActions.selected());
     dispatch(
       typeActions.filterData({
-        type,
+        type:"abroad"
       })
     );
-    setType("abroad");
+    
   };
 
   const cultureBtnClickHandler = () => {
-    dispatch(categoryActions.selected());
     dispatch(
       typeActions.filterData({
-        type,
+        type:"culture"
       })
     );
-    setType("culture");
+
   };
 
   return (
-    <div className="tour-container">
+    <div className="tour-container" id="tours">
       <div className="tour-navbar">
         <button className="tour-navbar__ship" onClick={shipBtnClickHandler}>
           <FontAwesomeIcon icon={faShip}></FontAwesomeIcon>

@@ -1,7 +1,7 @@
 import "./Home.scss";
 const Home = () => {
   return (
-    <div className="home">
+    <div className="home" id="home">
       <div className="homecontainer">
         <div className="homecontainer__text">
           <h1 className="homecontainer__text-title">
