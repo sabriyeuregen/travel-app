@@ -8,7 +8,6 @@ const Home = () => {
             Traveller ile dünyayı keşfet
           </h1>
           <p className="homecontainer__text-subtitle">Dünyanın en güzel şehirlerini uygun turlar ile gez.</p>
-          <button className="homecontainer__text-btn">Turları Keşfet</button>
         </div>
       </div>
     </div>

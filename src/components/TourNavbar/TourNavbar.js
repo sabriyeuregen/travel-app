@@ -45,7 +45,7 @@ const TourNavbar = () => {
           <span>Yurtdışı</span>
         </button>
 
-        <button className="tour__culture" onClick={cultureBtnClickHandler}>
+        <button className="tour-navbar__culture" onClick={cultureBtnClickHandler}>
           <FontAwesomeIcon icon={faSuitcase}></FontAwesomeIcon>
           <span>Kültür</span>
         </button>

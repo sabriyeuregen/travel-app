@@ -1,0 +1,6 @@
+.filter-tour {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px,auto));
+  padding: 20px;
+  justify-self: center;
+}

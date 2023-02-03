@@ -1,0 +1,16 @@
+.tourcard {
+  box-shadow: 5px 5px 15px rgba(#ffa822, 0.5);
+  border-radius: 10px;
+  overflow: hidden;
+  
+  &__img {
+   width: 100%;
+  }
+
+  &__detail {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px 5px;
+  }
+}

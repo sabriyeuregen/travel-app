@@ -25,9 +25,6 @@ const Navbar = () => {
             <li><Link activeClass="active" to="tours" spy={true} smooth={true} offset={50} duration={500}>Turlar</Link></li>
             <li><Link activeClass="active" to="aboutus" spy={true} smooth={true} offset={50} duration={500}>Hakkımızda</Link></li>
             <li><Link activeClass="active" to="contact" spy={true} smooth={true} offset={50} duration={500}>İletişim</Link></li>
-            <button className="basketbtn">
-              <FontAwesomeIcon className="basketicon" icon={faBasketShopping} />
-            </button>
           </ul>
         </div>
         <FontAwesomeIcon
