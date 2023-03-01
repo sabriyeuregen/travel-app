@@ -4,7 +4,7 @@ Projeyi oluştururken iki branchta çalıştım.İlk olarak develop branchında 
 
 Bu projede navbardaki linkler ile smooth-scrolling oluşturarak farklı bir düzende sayfaları ekledim. Seyahat sitesindeki tur çeşitlerini filtrelemek amacıyla butonlar ekledim.Butona tıklayınca ilgili datanın tipinden o türe ulaşmayı hedefledim.Responsive özelliği için navbarı hamburger menu şeklinde tasarladım. 
 
-![Travel App](src/assests/travel.png)
+![Travel App](src/assests/travel-img.png)
 
 ![Travel App](src/assests/travel-res.png)
 
