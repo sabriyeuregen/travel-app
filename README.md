@@ -14,7 +14,7 @@ Bu projede navbardaki linkler ile smooth-scrolling oluşturarak farklı bir düz
 + Redux, Redux toolkit
 + react-scroll
 
-## Sitil
+## Stil
 + SCSS
 
 ## İkonlar
