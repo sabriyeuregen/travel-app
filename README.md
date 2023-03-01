@@ -8,6 +8,8 @@ Bu projede navbardaki linkler ile smooth-scrolling oluşturarak farklı bir düz
 
 ![Travel App](src/assests/travel-res.png)
 
+![Travel App](src/assests/travel-tour.png)
+
 ## Kütüphaneler  
 + React
 + React-router-dom v6.4
